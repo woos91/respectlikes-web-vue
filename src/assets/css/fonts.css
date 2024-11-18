@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+@font-face {
+    font-family: CookieRunBold;
+    src: url(../fonts/CookieRunWebBold.woff2) format("woff2"), url(../fonts/CookieRunWebBold.woff) format("woff"), url(../fonts/CookieRunWebBold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility
+}
+
+@font-face {
+    font-family: CookieRunBlack;
+    src: url(../fonts/CookieRunWebBlack.woff2) format("woff2"), url(../fonts/CookieRunWebBlack.woff) format("woff"), url(../fonts/CookieRunWebBlack.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility
+}
+
+@font-face {
+    font-family: CookieRunRegular;
+    src: url(../fonts/CookieRunWebRegular.eot);
+    src: url(../fonts/CookieRunWebRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/CookieRunWebRegular.woff) format("woff"), url(../fonts/CookieRunWebRegular.ttf) format("ttf");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility
+}
