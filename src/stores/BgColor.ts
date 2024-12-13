@@ -18,7 +18,7 @@ const
 const
 	setColor = (): ActiveColor => {
 		let
-			spd: number = 0.02,
+			spd: number = 0.04,
 			rValue: number = Math.random() * (Math.PI * 2),
 			gValue: number = Math.random() * (Math.PI * 2),
 			bValue: number = Math.random() * (Math.PI * 2),
@@ -66,7 +66,7 @@ const initialState: BgColorState = {
 	color3: setColor()
 }
 
-export const useBgColorStore = defineStore('bgColor', () => {
+export const useBgColorData = defineStore('bgColor', () => {
 	const bg = ref(initialState);
 	// const doubleCount = computed(() => count.value * 2)
 	function change() {

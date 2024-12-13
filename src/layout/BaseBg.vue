@@ -1,13 +1,29 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+import { computed, onMounted } from 'vue'
+import { useBgColorData } from '../stores/bgColor'
+
+
+
+const bgData = useBgColorData();
+const bgColor = computed(()=>bgData.bg);
+
+let changer;
+onMounted(()=>{
+    changer = setInterval(() => {
+        bgData.change();
+    }, 100);
+});
+
+
+// defineProps<{
+// msg: string
+// }>()
 </script>
 
 <template>
     <div 
         class="home-bg" 
-        @style="`background:linear-gradient(135deg, rgba(${bgColor.color1.value},1) 0%, rgba(${bgColor.color2.value},1) 47%, rgba(${bgColor.color3.value},1) 100%)`">
+        :style="`background:linear-gradient(135deg, rgba(${bgColor.color1.value},1) 0%, rgba(${bgColor.color2.value},1) 47%, rgba(${bgColor.color3.value},1) 100%)`">
     </div>
 </template>
 
@@ -22,7 +38,7 @@ defineProps<{
         opacity:0;
         animation-name: cast-in;
         animation-duration: 4s;
-        animation-timing-function: linier;
+        animation-timing-function: linear;
         animation-delay: 0.2s;
         animation-fill-mode: forwards;
 	}
