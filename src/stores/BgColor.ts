@@ -6,6 +6,7 @@ export type ActiveColor = {
 	r: number, g: number, b: number,
 	rValue: number, gValue: number, bValue: number,
 	rAcc: number, gAcc: number, bAcc: number,
+	angle: number,
 	value: string
 };
 const
@@ -18,7 +19,7 @@ const
 const
 	setColor = (): ActiveColor => {
 		let
-			spd: number = 0.04,
+			spd: number = 0.02,
 			rValue: number = Math.random() * (Math.PI * 2),
 			gValue: number = Math.random() * (Math.PI * 2),
 			bValue: number = Math.random() * (Math.PI * 2),
@@ -27,12 +28,14 @@ const
 			bAcc: number = Math.random() * (spd * 0.3) + (spd * 0.85),
 			r: number = resultColorNo(rValue),
 			g: number = resultColorNo(gValue),
-			b: number = resultColorNo(bValue);
+			b: number = resultColorNo(bValue),
+			angle: number = Math.floor(Math.random()*360);
+
 		return {
 			num: 0,
 			r: r, g: g, b: b,
 			rValue: rValue, gValue: gValue, bValue: bValue,
-			rAcc: rAcc, gAcc: gAcc, bAcc: bAcc,
+			rAcc: rAcc, gAcc: gAcc, bAcc: bAcc, angle,
 			value: r + ',' + g + ',' + b
 		};
 	},
@@ -41,7 +44,8 @@ const
 			num: color.num + 1,
 			r: 0, g: 0, b: 0,
 			rValue: color.rValue, gValue: color.gValue, bValue: color.bValue,
-			rAcc: color.rAcc, gAcc: color.gAcc, bAcc: color.bAcc, value: color.value
+			rAcc: color.rAcc, gAcc: color.gAcc, bAcc: color.bAcc, angle:color.angle, 
+			value: color.value
 		};
 		col.rValue += col.rAcc;
 		col.gValue += col.gAcc;
@@ -52,6 +56,7 @@ const
 		col.r = resultColorNo(col.rValue);
 		col.g = resultColorNo(col.gValue);
 		col.b = resultColorNo(col.bValue);
+		col.angle = col.angle>360 ? 0 : col.angle+0.1;
 		col.value = col.r + ',' + col.g + ',' + col.b;
 		return col;
 	};
