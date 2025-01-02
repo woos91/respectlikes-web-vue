@@ -1,12 +1,12 @@
 <script setup lang="ts">
-// import AppearLogo from './AppearLogo.vue'
+import AppearLogo from './AppearLogo.vue'
 // import SignatureInfo from './SignatureInfo.vue'
 
 </script>
 
 <template>
 	<div class="page-main">
-		<!-- <AppearLogo /> -->
+		<AppearLogo />
 		<!-- <SignatureInfo /> -->
 	</div>
 </template>

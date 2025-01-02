@@ -18,7 +18,7 @@ router.beforeEach((to, from) => {
 <template>
 	<BaseBg id="bg" />
 	<Header id="header" />
-	<RouterView />
+	<RouterView class="main-wrap contents" />
 </template>
 
 <style scoped>
@@ -57,6 +57,9 @@ nav a:first-of-type {
 	border: 0;
 }
 
+div#app > .main-wrap {
+	margin :0;
+}
 @media (min-width: 1024px) {
 	header {
 		display: flex;
