@@ -19,7 +19,7 @@ const
 const
 	setColor = (): ActiveColor => {
 		let
-			spd: number = 0.02,
+			spd: number = 0.01,
 			rValue: number = Math.random() * (Math.PI * 2),
 			gValue: number = Math.random() * (Math.PI * 2),
 			bValue: number = Math.random() * (Math.PI * 2),

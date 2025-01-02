@@ -8,9 +8,10 @@ import router from './router'
 import axios from 'axios'
 
 const app = createApp(App)
+const pinia = createPinia()
 
 app.config.globalProperties.axios = axios;
-app.use(createPinia());
-app.use(router);
-
-app.mount('#app');
+app
+.use(router)
+.use(pinia)
+.mount('#app');
