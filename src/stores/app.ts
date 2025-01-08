@@ -12,7 +12,6 @@ export const useAppData = defineStore('app', () => {
 		deviceType:window.innerWidth > 800? "dt":"mb",
 		headerHeight:94,
 		footerHeight:100,
-		routerReady:false,
 	}),
 	navi = ref([
 		{title:"이벤트", link:"/event", sub:[]},
