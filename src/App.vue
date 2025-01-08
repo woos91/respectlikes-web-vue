@@ -8,6 +8,7 @@ import type { RouteData } from './router'
 import { useAppData } from './stores/app';
 
 
+
 const app = useAppData();
 router.beforeEach((to, from) => {
 	app.changeRoute(to as RouteData, from as RouteData);

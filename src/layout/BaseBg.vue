@@ -2,22 +2,16 @@
 import { computed, onMounted } from 'vue'
 import { useBgColorData } from '../stores/BgColor'
 
-
-
 const bgData = useBgColorData();
 const bgColor = computed(()=>bgData.bg);
 
-let changer;
+let changer = null;
 onMounted(()=>{
     changer = setInterval(() => {
         bgData.change();
     }, 1000/30);
 });
 
-
-// defineProps<{
-// msg: string
-// }>()
 </script>
 
 <template>
