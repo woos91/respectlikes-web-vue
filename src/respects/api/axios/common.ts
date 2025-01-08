@@ -1,8 +1,10 @@
-import axios, { AxiosInstance } from 'axios';
+import axios from 'axios';
+import type { AxiosInstance } from 'axios';
 import getLS from '../../data/getLS';
 
 export const commonAPI:AxiosInstance =  axios.create({
-    baseURL: process.env.API_URL,
+    // baseURL: process.env.API_URL,
+    baseURL: import.meta.env.API_URL,
     withCredentials:false,
     timeout: 5000
 });

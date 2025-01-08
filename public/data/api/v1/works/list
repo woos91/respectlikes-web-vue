@@ -1,0 +1,368 @@
+{
+    "status":"success",
+    "msg":"",
+    "paging":{
+        "page":1,
+        "perPage":100,
+        "pageNum":1
+    },
+    "data":[
+        {
+            "id":"FL003",
+            "titleMain":"휠라",
+            "titleSub":"Fila korea - desktop & mobile web",
+            "link":"https://www.fila.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Fila korea main page - for desktop",
+                    "fileName":"fila_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Fila korea sub page - for desktop",
+                    "fileName":"fila_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Fila korea main page - for mobile",
+                    "fileName":"fila_korea_mb_1.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"Fila korea sub page - for mobile",
+                    "fileName":"fila_korea_mb_2.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y> <i:1><x><i:2><i:3><i:4> </x></y>",
+            "layoutForMobile":"<y> <i:1><i:2><x><i:3><i:4></x></y>"
+
+        },
+        {
+            "id":"NP001",
+            "titleMain":"네파",
+            "titleSub":"Nepa : n plus - desktop & mobile web",
+            "link":"https://www.nplus.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"N PLUS 데스크탑",
+                    "fileName":"nepa_nplus_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"N PLUS 패키지",
+                    "fileName":"nepa_nplus_pk_1.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"N PLUS 패키지",
+                    "fileName":"nepa_nplus_pk_2.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"N PLUS  모바일",
+                    "fileName":"nepa_nplus_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x> <y><i:1><x><i:2><i:3></x></y> <i:4></x>",
+            "layoutForMobile":"<y> <i:1><x><y><i:2><i:3></y><i:4></x></y>"
+
+        },
+        {
+            "id":"PX001",
+            "titleMain":"PXG",
+            "titleSub":"PXG korea - desktop & mobile web",
+            "link":"https://www.pxg.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"PXG korea main page - for desktop",
+                    "fileName":"pkg_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"PXG korea sub page - for desktop",
+                    "fileName":"pkg_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"PXG korea main page - for desktop",
+                    "fileName":"pkg_korea_dt_4.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"PXG korea main page - for mobile",
+                    "fileName":"pkg_korea_mb_1.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"PXG korea sub page - for mobile",
+                    "fileName":"pkg_korea_mb_2.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y> <i:1><x><i:2><i:5></x><x><i:4><i:3></x></y>",
+            "layoutForMobile":"<y> <i:1><x><i:2><i:5></x><x><i:4><i:3></x></y>"
+        },
+        {
+            "id":"LI001",
+            "titleMain":"라이카",
+            "titleSub":"Leica korea - desktop & mobile web",
+            "link":"https://www.leica-store.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Leica korea main page - for desktop",
+                    "fileName":"leica_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Leica korea sub page - for desktop",
+                    "fileName":"leica_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Leica korea main page - for mobile",
+                    "fileName":"leica_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:2></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:2></x></y>"
+        },
+        {
+            "id":"MK001",
+            "titleMain":"무스너클",
+            "titleSub":"Moose Knuckles korea - desktop & mobile web",
+            "link":"https://www.nplus.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Moose Knuckles korea main  - for desktop",
+                    "fileName":"moose_knuckles_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Moose Knuckles korea sub  - for desktop",
+                    "fileName":"moose_knuckles_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Moose Knuckles korea main  - for mobile",
+                    "fileName":"moose_knuckles_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><i:1><i:2><i:3></x>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+
+        },
+        {
+            "id":"PT001",
+            "titleMain":"포터 온라인 스토어",
+            "titleSub":"Porter korea - desktop & mobile web",
+            "link":"https://korea.shop-porter.com/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Porter online store main  - for desktop",
+                    "fileName":"porter_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Porter online store sub  - for desktop",
+                    "fileName":"porter_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Porter online store main  - for mobile",
+                    "fileName":"porter_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><i:1><i:2><i:3></x>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+        },
+        {
+            "id":"PN001",
+            "titleMain":"판도라",
+            "titleSub":"Pandora korea - desktop & mobile web",
+            "link":"https://kr.pandora.net/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Pandora korea main  - for desktop",
+                    "fileName":"pandora_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Pandora korea sub  - for desktop",
+                    "fileName":"pandora_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Pandora korea main  - for mobile",
+                    "fileName":"pandora_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:3></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+        },
+        {
+            "id":"BN001",
+            "titleMain":"부쉬넬",
+            "titleSub":"Bushnell Golf korea - desktop & mobile web",
+            "link":"https://www.bushnellgolfkorea.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Bushnell Golf main  - for desktop",
+                    "fileName":"bushnell_golf_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Bushnell Golf sub  - for desktop",
+                    "fileName":"bushnell_golf_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Bushnell Golf main  - for mobile",
+                    "fileName":"bushnell_golf_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:3></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+        },
+        {
+            "id":"GG001",
+            "titleMain":"골든구스",
+            "titleSub":"Golden Goose korea - desktop & mobile web",
+            "link":"https://www.bushnellgolfkorea.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Golden Goos main  - for desktop",
+                    "fileName":"golden_goose_korea_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Golden Goos sub  - for desktop",
+                    "fileName":"golden_goose_korea_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Golden Goos main  - for mobile",
+                    "fileName":"golden_goose_korea_mb_1.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:3></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+        },
+        {
+            "id":"FL002",
+            "titleMain":"휠라",
+            "titleSub":"Fila korea - desktop & mobile web",
+            "link":"https://www.fila.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"Fila korea sub page - for desktop",
+                    "fileName":"fila_korea_dt_3.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"Fila korea sub page - for desktop",
+                    "fileName":"fila_korea_dt_4.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"Fila korea sub page - for mobile",
+                    "fileName":"fila_korea_mb_3.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:3></x><y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+
+        },
+        {
+            "id":"SI001",
+            "titleMain":"신세계 인터내셔날",
+            "titleSub":"Shinsaegae International - desktop web",
+            "link":"http://www.sikorea.co.kr/",
+            "note":"",
+            "production":"Styleship. Inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_6.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_7.jpg"
+                },
+                {
+                    "imgID":"8",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_8.jpg"
+                },
+                {
+                    "imgID":"9",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_9.jpg"
+                },
+                {
+                    "imgID":"10",
+                    "alt":"신세계인터내셔날 메인",
+                    "fileName":"shinsaegae_international_dt_10.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x> <y><i:1></y> <y><i:2><i:3><i:4><i:5></y> <y><i:6><i:7></y> <y><i:8><i:9><i:10></y> </x>",
+            "layoutForMobile":"<y> <x> <y><i:1></y></x> <x><y><i:2><i:3><i:4><i:5></y> <y><i:6><i:7></y> <y><i:8><i:9><i:10></y> </x> </y>"
+
+        }
+    ]
+}

@@ -17,19 +17,18 @@ function resize() {
 	// setWideMode(getWide());
 }
 function loadData() {
-	console.log(ul1.value);
-	// listSort = new FillSort(ul1.value as HTMLElement, "sort-item", [800, 1500, 1900], 40);
-	// api.request(
-	// 	"WORK_LIST",
-	// 	{},
-	// 	(data:any)=>{
-	// 		setConsData(data.data);
-	// 		listSort.start();
-	// 	},
-	// 	(err:string)=>{
-	// 		console.warn(err);
-	// 	}
-	// )
+	if (ul1.value) listSort = new FillSort(ul1.value, "sort-item", [800, 1500, 1900], 40);
+	api.request(
+		"WORK_LIST",
+		{},
+		(data:any)=>{
+			consData.value = data.data;
+			listSort.start();
+		},
+		(err:string)=>{
+			console.warn(err);
+		}
+	)
 }
 onMounted(()=>{
 	window.addEventListener("resize", resize);

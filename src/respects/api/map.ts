@@ -26,6 +26,6 @@ export class APIMap {
     }
 }
 const apiMap:APIMap = new APIMap([
-    { type:"WORK_LIST",     name:"our/workList",        method : "GET",     useAuth:false }
+    { type:"WORK_LIST",     name:"works/list",        method : "GET",     useAuth:false }
 ]);
 export default apiMap;

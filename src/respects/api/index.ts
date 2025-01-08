@@ -2,7 +2,7 @@
 import apiMap from "./map";
 import type { APIMap, APIType } from "./map";
 import BufferWorks from "../BufferWorks";
-import { AxiosResponse } from "axios";
+import type { AxiosResponse } from "axios";
 import { commonAPI } from "./axios/common";
 
 interface APIData extends APIType {
@@ -15,7 +15,7 @@ class API {
     constructor(map:APIMap) {
         this.isWorking = false;
         this._apiData = map;
-        this.apiURL = process.env.REACT_APP_API_URL ||"";
+        this.apiURL = import.meta.env.VITE_API_PATH||"";
     }
     private _apiData:APIMap;
 
@@ -24,7 +24,6 @@ class API {
     get apiURL() { return this._apiURL }
 
     public request (type: string, params: {}, success?: Function, error?: Function): void {
-        console.log("request");
         let req:APIData|undefined = this._apiData.getRequest(type) as APIData;
         if (req !== undefined) {
             req.url = this.apiURL+req.name;
@@ -36,9 +35,7 @@ class API {
         }
     }
     private addBuffer(req:APIData):void {
-        console.log("add buffer");
         let workReq:APIData|undefined = this.workList.push(req);
-        console.log("workReq", workReq);
         if (workReq !== undefined) {
             this.sendRequest(workReq);
         }
@@ -49,7 +46,6 @@ class API {
         else this.isWorking = false;
     }
     private sendRequest(req:APIData) {
-        console.log("sendRequst");
         this.isWorking = true;
         (async ()=>{
             try {
@@ -57,7 +53,9 @@ class API {
                     url:req.url,
                     method:req.method
                 });
-                if (req.success) req.success(response.data);
+                if (req.success) {
+                    req.success(response.data);
+                }
             }
             catch(error) {
                 if (req.error) req.error(error);
