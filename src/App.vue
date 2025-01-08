@@ -2,11 +2,11 @@
 import { onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import router from './router'
-import HelloWorld from './components/HelloWorld.vue'
 import BaseBg from './layout/BaseBg.vue';
 import Header from './layout/Header.vue';
 import type { RouteData } from './router'
 import { useAppData } from './stores/app';
+
 
 
 const app = useAppData();
@@ -14,10 +14,10 @@ router.beforeEach((to, from) => {
 	app.changeRoute(to as RouteData, from as RouteData);
 })
 const winResizeHandler = ()=> {
-	const wd = window.innerWidth;
+	const wd = window.innerWidth, hg = window.innerHeight;
 	app.layout.appWidth = wd;
-	app.layout.appHeight = window.innerHeight;
-	app.layout.deviceType = wd >800 ? "dt" : "mb";
+	app.layout.appHeight = hg;
+	app.layout.deviceType = wd > 800 ? "dt" : "mb";
 };
 onMounted(()=>{
 	winResizeHandler();
