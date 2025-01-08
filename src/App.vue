@@ -14,8 +14,10 @@ router.beforeEach((to, from) => {
 	app.changeRoute(to as RouteData, from as RouteData);
 })
 const winResizeHandler = ()=> {
-	app.
-	console.log(window.innerWidth)
+	const wd = window.innerWidth;
+	app.layout.appWidth = wd;
+	app.layout.appHeight = window.innerHeight;
+	app.layout.deviceType = wd >800 ? "dt" : "mb";
 };
 onMounted(()=>{
 	winResizeHandler();
@@ -25,9 +27,11 @@ onMounted(()=>{
 </script>
 
 <template>
-	<BaseBg id="bg" />
-	<Header id="header" />
-	<RouterView class="main-wrap contents" />
+	<div class="app-wrap">
+		<BaseBg id="bg" />
+		<Header id="header" />
+		<RouterView class="main-wrap contents" />
+	</div>
 </template>
 
 <style scoped>
