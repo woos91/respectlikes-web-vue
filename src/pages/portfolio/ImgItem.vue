@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import ImgGroups from './ImgGroups.vue'
+
 
 </script>
 
 <template>
-	<div>
-		<ImgGroups />
-	</div>
+
 </template>
 
 <style scoped>

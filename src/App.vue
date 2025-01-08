@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import router from './router'
 import HelloWorld from './components/HelloWorld.vue'
@@ -10,7 +11,15 @@ import { useAppData } from './stores/app';
 
 const app = useAppData();
 router.beforeEach((to, from) => {
-	app.changeRoute(to, from);
+	app.changeRoute(to as RouteData, from as RouteData);
+})
+const winResizeHandler = ()=> {
+	app.
+	console.log(window.innerWidth)
+};
+onMounted(()=>{
+	winResizeHandler();
+	window.addEventListener("resize", (e)=>{winResizeHandler()})
 })
 
 </script>

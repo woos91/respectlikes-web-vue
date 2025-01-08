@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import letterSlicer from '../../respects/HTMLElements/letterSlicer';
 import SignatureLogo from "./SignatureLogo.vue"
 
-const signatureTxt = ref<HTMLDivElement>();
+const signatureTxt = ref();
 onMounted(()=>{
-	
+	if (signatureTxt.value) letterSlicer(signatureTxt.value, "slice");
+	const els:NodeList = document.querySelectorAll(".signature-info span.slice");
+	for (let i:number=0, el:HTMLSpanElement; i<els.length; i++) {
+		el = els[i] as HTMLSpanElement;
+		el.style.animation = `cast-move-up 0.6s ease-out ${i*0.03+2.8}s forwards`;
+		el.style.opacity = `0`;
+	}
 });
 </script>
 
@@ -36,6 +42,7 @@ onMounted(()=>{
 		span.slice {
 			display:inline-block;
 			opacity : 0;
+			position:relative;
 		}
 	}
 }

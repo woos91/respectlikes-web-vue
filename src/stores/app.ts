@@ -7,7 +7,9 @@ export const useAppData = defineStore('app', () => {
 	layout = ref({
 		rootElement:document.querySelector("div#app"),
 		naviMode:false,
-		mobileMode:false,
+		appWidth:window.innerWidth,
+		appHeight:window.innerHeight,
+		deviceType:window.innerWidth > 800? "dt":"mb",
 		headerHeight:94,
 		footerHeight:100,
 		routerReady:false,

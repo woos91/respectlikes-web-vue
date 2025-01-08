@@ -1,21 +1,28 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-// import SignatureKr from '../../assets/images/logo-kr.svg'
-// import SignatureHj from '../../assets/images/logo-hj.svg'
 
-let statTimer:number, statCast:number;
-const viewStat = ref(1);
+let statTimer:any, statCast:any;
+const viewStat = ref(0);
 onMounted(()=>{ 
-	
+	statTimer = setInterval(() => {
+		if (viewStat.value<2) viewStat.value += 1;
+		else viewStat.value = 1; 
+	},
+	5000);
+	statCast = setTimeout(() => {
+		viewStat.value = 1;
+	},
+	2000);
 })
 onUnmounted(()=>{
-	
+	clearInterval(statTimer);
+	clearInterval(statCast);
 })
 </script>
 
 <template>
 	<div>
-		<div class="sign-img sign-status-1">
+		<div :class="'sign-img sign-status-'+viewStat">
 			<svg version="1.1" id="logo-kr" class="signature-img signature-kr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260 72" style="enable-background:new 0 0 260 72;" xml:space="preserve">
 				<g id="k-r">
 						<path class="st0" d="M24.62,20.18c-1.72-1.72-3.3-1.26-4.77,0.21c0,0-7.35,6.87-8.97,8.42c-1.69,1.62-2.67,3.92-2.67,7.01,c0,3.09,0.26,17.32,0.26,17.32c0,1.61,0.46,2.15,2.23,2.15h5.22c1.77,0,2.23-0.54,2.23-2.15l-0.2-17.34,c3.03-2.77,7.64-7.06,8.79-8.13c1.15-1.07,2.15-2.13,0.83-4.02L24.62,20.18z"/>

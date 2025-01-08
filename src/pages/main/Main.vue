@@ -7,7 +7,7 @@ import SignatureInfo from './SignatureInfo.vue'
 <template>
 	<div class="page-main">
 		<AppearLogo />
-		<!-- <SignatureInfo /> -->
+		<SignatureInfo />
 	</div>
 </template>
 
