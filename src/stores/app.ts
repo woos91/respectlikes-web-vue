@@ -9,7 +9,7 @@ export const useAppData = defineStore('app', () => {
 		naviMode:false,
 		appWidth:window.innerWidth,
 		appHeight:window.innerHeight,
-		deviceType:window.innerWidth > 800? "dt":"mb",
+		deviceType:(window.innerWidth > 800? "dt":"mb") as "dt"|"mb",
 		headerHeight:94,
 		footerHeight:100,
 	}),

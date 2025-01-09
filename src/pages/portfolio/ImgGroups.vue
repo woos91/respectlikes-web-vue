@@ -48,5 +48,26 @@ onUnmounted(()=>{
 </template>
 
 <style scoped>
-
+ul.img-group-list {
+	display:flex;
+	flex-wrap:wrap;
+	margin:200px 2rem 100px;
+	width:calc(100vw - 4rem);
+	padding:0;
+}
+.img-group-list li {
+	list-style: none;
+	padding:0.6rem;
+	margin-bottom:1rem;
+	box-sizing: border-box;
+}
+.align-dt>li {
+	width:50%;
+}
+.align-mb>li {
+	width:100%;
+}
+.align-wide>li {
+	width:calc(100% / 3);
+}
 </style>
