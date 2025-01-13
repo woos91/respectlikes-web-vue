@@ -13,7 +13,7 @@ class BufferWorks<T> {
 	get isWorking(): boolean {
         return this._isWorking;
     }
-	set isWorking(arg:boolean): void {
+	set isWorking(arg:boolean) {
         this._isWorking = arg;
     }
 	private get _nextWork():T|undefined {
