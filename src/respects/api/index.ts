@@ -13,7 +13,6 @@ interface APIData extends APIType {
 }
 class API {
     constructor(map:APIMap) {
-        this.isWorking = false;
         this._apiData = map;
         this.apiURL = import.meta.env.VITE_API_PATH||"";
     }
@@ -24,18 +23,18 @@ class API {
     get apiURL() { return this._apiURL }
 
     public request (type: string, params: {}, success?: Function, error?: Function): void {
-        let req:APIData|undefined = this._apiData.getRequest(type) as APIData;
+        let req:APIData|undefined = this._apiData.getRequest(type) as (APIData|undefined);
         if (req !== undefined) {
             req.url = this.apiURL+req.name;
             req.params = params;
             req.success = success;
             req.error = error;
-
             this.addBuffer(req);
         }
     }
     private addBuffer(req:APIData):void {
-        let workReq:APIData|undefined = this.workList.push(req);
+        let workReq:APIData|undefined = this.workList.set(req);
+        console.log("addBuffer", workReq);
         if (workReq !== undefined) {
             this.sendRequest(workReq);
         }
@@ -43,10 +42,9 @@ class API {
     private nextWork():void {
         const req = this.workList.next();
         if (req !== undefined) this.sendRequest(req);
-        else this.isWorking = false;
     }
     private sendRequest(req:APIData) {
-        this.isWorking = true;
+        // console.log("sendRequest", req);
         (async ()=>{
             try {
                 const response:AxiosResponse = await commonAPI({
@@ -55,15 +53,18 @@ class API {
                 });
                 if (req.success) {
                     req.success(response.data);
+                    this.workList.next();
                 }
             }
             catch(error) {
-                if (req.error) req.error(error);
+                if (req.error) {
+                    req.error(error);
+                    this.workList.next();
+                }
             }
         })();
     }
     workList = new BufferWorks<APIData>();
-    isWorking: boolean = false;
 }
 const api:API = new API(apiMap);
 

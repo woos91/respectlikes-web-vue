@@ -9,7 +9,7 @@ export const useAppData = defineStore('app', () => {
 		naviMode:false,
 		appWidth:window.innerWidth,
 		appHeight:window.innerHeight,
-		deviceType:(window.innerWidth > 800? "dt":"mb") as "dt"|"mb",
+		deviceType:(window.innerWidth > 480? "dt":"mb") as "dt"|"mb",
 		headerHeight:94,
 		footerHeight:100,
 	}),
@@ -32,9 +32,6 @@ export const useAppData = defineStore('app', () => {
 	}
     // const count = ref(0)
     // const doubleCount = computed(() => count.value * 2)
-    // function increment() {
-    //     count.value++
-    // }
 
     return { layout, navi, routeInfo, changeRoute }
 })

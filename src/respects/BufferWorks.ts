@@ -13,6 +13,9 @@ class BufferWorks<T> {
 	get isWorking(): boolean {
         return this._isWorking;
     }
+	set isWorking(arg:boolean): void {
+        this._isWorking = arg;
+    }
 	private get _nextWork():T|undefined {
 		if (!this._isWorking) {
 			if (this.autoNextStart) return this.next();
@@ -21,7 +24,11 @@ class BufferWorks<T> {
 			return undefined;
 		}
 	}
-	push(item: T): T | undefined {
+	push(item: T): void {
+		this._data.push(item);
+	}
+	set(item: T): T | undefined {
+		console.log("_isWorking", this._isWorking)
 		this._data.push(item);
 		return this._nextWork;
 	}

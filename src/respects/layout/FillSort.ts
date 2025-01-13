@@ -36,6 +36,7 @@ class FillSort {
         for (let i=0; i<this.rowEa; i++) {
             this.rows[i] = 0;
         }
+        let max:number = 0;
         for (let i=0, item; i<list.length; i++) {
             let itm = list[i] as HTMLElement;
             itm.style.width = itemWd+'px';
@@ -44,8 +45,8 @@ class FillSort {
             itm.style.left = row*itemWd + (row*this.margin) + 'px'
             itm.style.top = this.rows[row] + 'px'
             this.rows[row] += itm.offsetHeight+this.margin;
+            max = this.rows[row]-this.margin;
         }
-        let max = choiceLine(this.rows);
         this.elem.style.height = max+'px';
         function choiceLine(rows:number[]):number {
             const rowEa:number = rows.length;

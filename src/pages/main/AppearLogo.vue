@@ -91,14 +91,14 @@ onMounted(()=>{
 
 <style scoped>
 div.logo-container {
-	height: 100vh;
-    width: 100vw;
+	/* height: 100%; */
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
 	
 	.app-logo {
-		height: 20vmin;
+		height: 22vmin;
 		pointer-events:none;
 	}
 

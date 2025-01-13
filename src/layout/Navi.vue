@@ -8,9 +8,9 @@ refHome = ref(null),
 refAbout = ref(null),
 refWorks = ref(null);
 onMounted(()=>{
-	if (refHome.value) letterSlicer(refHome.value.$el, "navi_txt slice1");
-	if (refAbout.value) letterSlicer(refAbout.value.$el, "navi_txt slice2");
-	if (refWorks.value) letterSlicer(refWorks.value.$el, "navi_txt slice3");
+	if (refHome.value) letterSlicer(refHome.value, "navi_txt slice1");
+	if (refAbout.value) letterSlicer(refAbout.value, "navi_txt slice2");
+	if (refWorks.value) letterSlicer(refWorks.value, "navi_txt slice3");
 	const txtList:HTMLSpanElement[] = [];
 	const els:NodeList = document.querySelectorAll(".header_navi span.navi_txt");
 	for (let i:number=0, el:HTMLSpanElement; i<els.length; i++) {
@@ -24,9 +24,9 @@ onMounted(()=>{
 
 <template>
 	<div class="header_navi">
-        <RouterLink ref="refHome" class="navi-link" to="/">Home</RouterLink>
-        <RouterLink ref="refAbout" class="navi-link" to="/about">About</RouterLink>
-        <RouterLink ref="refWorks" class="navi-link" to="/portfolio">Works</RouterLink>
+        <RouterLink class="navi-link" to="/"><span class="txt-group" ref="refHome">Home</span></RouterLink>
+        <RouterLink class="navi-link" to="/about"><span class="txt-group" ref="refAbout">About</span></RouterLink>
+        <RouterLink class="navi-link" to="/portfolio"><span class="txt-group" ref="refWorks">Works</span></RouterLink>
 	</div>
 </template>
 

@@ -13,7 +13,10 @@ import SignatureInfo from './SignatureInfo.vue'
 
 <style scoped>
 .page-main {
-	
+	display: flex;
+    justify-content: center;
+	min-height:100vh !important;
+	margin:0 !important;
 }
 
 </style>

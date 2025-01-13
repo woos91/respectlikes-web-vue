@@ -5,6 +5,7 @@ import ImgGroups from './ImgGroups.vue'
 
 <template>
 	<div>
+		<h3>My works</h3>
 		<ImgGroups />
 	</div>
 </template>

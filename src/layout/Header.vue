@@ -1,7 +1,7 @@
 <template>
 	<div class="header-container">
 		<div class="header-bg">
-			<div :style="`background:linear-gradient(135deg, rgba(${bgColor.color1.value},1) 0%, rgba(${bgColor.color2.value},1) 47%, rgba(${bgColor.color3.value},1) 100%)`"></div>
+			<div class="color-area" :style="`background:linear-gradient(${bgColor.color1.angle}deg, rgba(${bgColor.color1.value},1) 0%, rgba(${bgColor.color2.value},1) 47%, rgba(${bgColor.color3.value},1) 100%)`"></div>
 		</div>
 		<TopLogo />
 		<Navi />
@@ -38,20 +38,21 @@ const bgColor = computed(()=>bgData.bg);
 		right:0;
 		top:0;
 		position:fixed;
+		z-index:100;
 
 		.header-bg {
 			position:fixed;
 			left:0;
 			top:0;
-			right:0;
+			right: 8px;
 			height:3rem;
 			overflow: hidden;
 			pointer-events : none;
 			opacity:0;
 			animation-name: cast-in;
 			animation-duration: 7s;
-			animation-timing-function: linier;
-			animation-delay: 7s;
+			animation-timing-function: linear;
+			animation-delay: 2s;
 			animation-fill-mode: forwards;
 			z-index:0;
 

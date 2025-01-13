@@ -1,3 +1,4 @@
+export type DeviceType = "dt" | "mb"; 
 export interface ImageType {
     imgID:string,
     alt:string,

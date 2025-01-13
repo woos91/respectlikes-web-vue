@@ -6,17 +6,17 @@ interface ImgDataList extends Array<ImgData> {};
 
 const props = defineProps<{
 	itemProps:ConsType,
-	deviceMode:"dt"|"mb"
+	deviceType:"dt"|"mb"
 }>(),
-itemProps = ref(props.itemProps),
-deviceMode = ref(props.deviceMode);
+itemProps = computed(()=>props.itemProps),
+deviceType = computed(()=>props.deviceType);
 
 const 
 imgPath:string = import.meta.env.VITE_DATA_PATH+'works/images/',
-imgLayout = computed(()=>{
-	if (deviceMode.value === "dt") return getLayout(itemProps.value.layoutForDesktop);
+imgLayout = ref(computed(()=>{
+	if (deviceType.value === "dt") return getLayout(itemProps.value.layoutForDesktop);
 	else return getLayout(itemProps.value.layoutForMobile);
-}),
+})),
 imgs:ImgDataList = (()=>{
 	let imgDatas:ImgDataList = [];
 	for(let i = 0; i < itemProps.value.images.length; i++){
@@ -38,13 +38,14 @@ function getLayout(sampleCode:string) {
 		id = imgStrs[i] = imgStrs[i].split('>')[0].split(' ').join('');
 		layout = layout.split('<i:'+id+'>').join(getImgCode(id));
 	}
-	console.log(layout);
 	return layout;
 }
 function randomDelay() {
 	return Math.random()*2;
 }
 onMounted(()=>{
+	window.addEventListener("resize", (e)=>{
+	})
 })
 onUnmounted(()=>{
 })
@@ -57,11 +58,11 @@ onUnmounted(()=>{
 			<p class='text-sub' :style="`animationDelay:${randomDelay()}s`">{{itemProps.titleSub}}</p>
 		</div>
 		<div v-html="imgLayout"></div>
-		
+
 	</div>
 </template>
 
-<style scoped>
+<style>
 .img-group {}
 .direction-x {
 	display:flex;
