@@ -53,13 +53,13 @@ class API {
                 });
                 if (req.success) {
                     req.success(response.data);
-                    this.workList.next();
+                    this.nextWork();
                 }
             }
             catch(error) {
                 if (req.error) {
                     req.error(error);
-                    this.workList.next();
+                    this.nextWork();
                 }
             }
         })();
