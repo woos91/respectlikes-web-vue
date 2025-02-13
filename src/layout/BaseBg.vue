@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted } from 'vue'
-import { useBgColorData } from '../stores/bgColor'
+import { useBgColorData } from '../stores/BgColor'
 
 const bgData = useBgColorData();
 const bgColor = computed(()=>bgData.bg);

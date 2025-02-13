@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import router from './router'
 import BaseBg from './layout/BaseBg.vue';
 import Header from './layout/Header.vue';
+import Footer from './layout/Footer.vue';
 import type { RouteData } from './router'
 import { useAppData } from './stores/app';
 import Scrollbar from 'smooth-scrollbar';
@@ -11,6 +12,7 @@ import Scrollbar from 'smooth-scrollbar';
 
 const app = useAppData();
 const myScroll = ref();
+let scroll;
 router.beforeEach((to, from) => {
 	app.changeRoute(to as RouteData, from as RouteData);
 })
@@ -23,7 +25,7 @@ const winResizeHandler = ()=> {
 onMounted(()=>{
 	winResizeHandler();
 	window.addEventListener("resize", (e)=>{winResizeHandler()})
-	Scrollbar.init(myScroll.value,
+	scroll = Scrollbar.init(myScroll.value,
 		{
 			damping: 0.07,
 			plugins: {
@@ -35,6 +37,15 @@ onMounted(()=>{
 			}
 		}
 	);
+	scroll.addListener((status) => {
+		window.dispatchEvent(
+			new CustomEvent('appScroll', {
+				detail: { x: status.offset.x, y: status.offset.y },
+				bubbles: true,
+				cancelable: true
+			})
+		)
+	});
 })
 
 </script>
@@ -45,6 +56,7 @@ onMounted(()=>{
 	<div id="my-scrollbar" ref="myScroll" class="app-wrap">
 		<RouterView class="main-wrap contents"></RouterView>
 	</div>
+	<Footer id="footer"></Footer>
 </template>
 
 <style>
@@ -99,6 +111,7 @@ div#app div.app-wrap .main-wrap {
 	padding: 2rem;
 	margin: 3rem 0 0 0;
 	min-height: calc(100vh - 3rem);
+	overflow-x :hidden;
 }
 #my-scrollbar .scrollbar-track {
 	background:rgba(0,0,0,0);
