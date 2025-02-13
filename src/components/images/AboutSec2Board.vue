@@ -102,8 +102,8 @@
     stroke-linejoin: round;
     stroke-miterlimit: 10;
     vector-effect: non-scaling-stroke;
-    stroke-dasharray: 2450;
-    stroke-dashoffset: 2450;
+    stroke-dasharray: 2770;
+    stroke-dashoffset: 2770;
     opacity:0;
     transition: all 1s;
 }

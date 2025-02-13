@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted } from 'vue'
-import { useBgColorData } from '../stores/bgColor'
+import { useBgColorData } from '../stores/BgColor'
 import TopLogo from './TopLogo.vue'
 import Navi from './Navi.vue';
 

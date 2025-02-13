@@ -15,7 +15,7 @@ onMounted(()=>{
 </script>
 
 <template>
-    <div style="position:fixed;">
+    <div class="bg-area">
         <div 
             class="home-bg" 
             :style="`background:linear-gradient(${bgColor.color1.angle}deg, rgba(${bgColor.color1.value},1) 0%, rgba(${bgColor.color2.value},1) 47%, rgba(${bgColor.color3.value},1) 100%)`">
@@ -24,8 +24,12 @@ onMounted(()=>{
 </template>
 
 <style scoped>
-    .home-bg {
+    .bg-area {
+        position:fixed; 
+        pointer-events: none;
         z-index:-1;
+    }
+    .home-bg {
         position: fixed;
         left:0;
         top:0;

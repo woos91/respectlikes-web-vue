@@ -7,25 +7,41 @@ import Header from './layout/Header.vue';
 import Footer from './layout/Footer.vue';
 import type { RouteData } from './router'
 import { useAppData } from './stores/app';
+
 import Scrollbar from 'smooth-scrollbar';
+import isMobile from './respects/browser/isMobile';
 
 
 const app = useAppData();
-const myScroll = ref();
-let scroll;
+const contentsWrap = ref();
+const isMb:boolean = isMobile();
+// const isMb:boolean = true;
+app.layout.deviceType = isMb? "mb":"dt";
+
+let scroll:Scrollbar;
 router.beforeEach((to, from) => {
 	app.changeRoute(to as RouteData, from as RouteData);
+	contentsWrap.value.setAttribute("data-page", to.name);
 })
 const winResizeHandler = ()=> {
 	const wd = window.innerWidth, hg = window.innerHeight;
 	app.layout.appWidth = wd;
 	app.layout.appHeight = hg;
-	app.layout.deviceType = wd > 480 ? "dt" : "mb";
+
+	 if (isMb) {
+	
+	} else {
+		if (scroll) triggerScrollEvent(scroll.offset);
+	}
 };
 onMounted(()=>{
 	winResizeHandler();
 	window.addEventListener("resize", (e)=>{winResizeHandler()})
-	scroll = Scrollbar.init(myScroll.value,
+	if (isMb) setBrowserScroll();
+	else setSmoothScroll();
+})
+function setSmoothScroll() {
+	scroll = Scrollbar.init(contentsWrap.value,
 		{
 			damping: 0.07,
 			plugins: {
@@ -38,22 +54,34 @@ onMounted(()=>{
 		}
 	);
 	scroll.addListener((status) => {
-		window.dispatchEvent(
-			new CustomEvent('appScroll', {
-				detail: { x: status.offset.x, y: status.offset.y },
-				bubbles: true,
-				cancelable: true
-			})
-		)
+		triggerScrollEvent(status.offset);
 	});
-})
+}
+function setBrowserScroll() {
+	let _se = window.addEventListener("scroll", (e)=>{
+		let offset = {
+			x: window.scrollX,
+            y: window.scrollY
+		};
+		triggerScrollEvent(offset);
+	});
+}
+function triggerScrollEvent(offset:any) {
+	window.dispatchEvent(
+		new CustomEvent('appScroll', {
+			detail: { x: offset.x, y: offset.y },
+			bubbles: true,
+			cancelable: true
+		})
+	)
+}
 
 </script>
 
 <template>
 	<BaseBg id="bg"></BaseBg>
 	<Header id="header"></Header>
-	<div id="my-scrollbar" ref="myScroll" class="app-wrap">
+	<div id="contentswrap" ref="contentsWrap" :class="'app-wrap device_'+app.layout.deviceType">
 		<RouterView class="main-wrap contents"></RouterView>
 	</div>
 	<Footer id="footer"></Footer>
@@ -67,9 +95,8 @@ div#app > div.app-wrap {
 	width:100vw;
 	height:100vh;
 }
-div#app > div.app-wrap {
-	box-sizing: border-box;
-	
+div#app > div.app-wrap.device_mb {
+	height:unset;
 }
 header {
 	line-height: 1.5;
@@ -108,18 +135,17 @@ nav a:first-of-type {
 
 div#app div.app-wrap .main-wrap {
 	box-sizing: border-box;
-	padding: 2rem;
-	margin: 3rem 0 0 0;
+	padding: 3rem 2rem 0;
 	min-height: calc(100vh - 3rem);
 	overflow-x :hidden;
 }
-#my-scrollbar .scrollbar-track {
+#contentswrap .scrollbar-track {
 	background:rgba(0,0,0,0);
 }
-#my-scrollbar .scrollbar-thumb {
+#contentswrap .scrollbar-thumb {
 	background:rgba(0,0,0,0);
 }
-#my-scrollbar .scrollbar-thumb::before {
+#contentswrap .scrollbar-thumb::before {
 	background:rgba(0,0,0,0);
 	content:"";
 	position: absolute;
