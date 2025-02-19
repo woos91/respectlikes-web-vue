@@ -112,6 +112,6 @@
 ._active #about_img_board line {
     opacity:1;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 2s linear;
+    transition: stroke-dashoffset 1.5s linear;
 }
 </style>

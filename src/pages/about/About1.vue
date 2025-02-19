@@ -31,6 +31,7 @@ import Sec1Bg from "@/components/images/AboutSec1bg.vue"
     align-items: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 3.5rem;
+    margin-top :8.3rem;
 
     .content-box {
         min-width: 20.1rem;

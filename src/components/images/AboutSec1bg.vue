@@ -77,6 +77,6 @@ function setStrokeDashs() {
 ._active #about_img_bg path {
     opacity:1;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 2s linear;
+    transition: stroke-dashoffset 1.5s linear;
 }
 </style>

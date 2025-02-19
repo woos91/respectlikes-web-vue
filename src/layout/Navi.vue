@@ -4,12 +4,14 @@ import letterSlicer from '../respects/HTMLElements/letterSlicer';
 import { RouterLink } from 'vue-router'
 
 const 
-refHome = ref(null),
+// refHome = ref(null),
 refAbout = ref(null),
+refProfile = ref(null),
 refWorks = ref(null);
 onMounted(()=>{
-	if (refHome.value) letterSlicer(refHome.value, "navi_txt slice1");
-	if (refAbout.value) letterSlicer(refAbout.value, "navi_txt slice2");
+	// if (refHome.value) letterSlicer(refHome.value, "navi_txt slice1");
+	if (refAbout.value) letterSlicer(refAbout.value, "navi_txt slice1");
+	if (refProfile.value) letterSlicer(refProfile.value, "navi_txt slice2");
 	if (refWorks.value) letterSlicer(refWorks.value, "navi_txt slice3");
 	const txtList:HTMLSpanElement[] = [];
 	const els:NodeList = document.querySelectorAll(".header_navi span.navi_txt");
@@ -24,8 +26,9 @@ onMounted(()=>{
 
 <template>
 	<div class="header_navi">
-        <RouterLink class="navi-link" to="/"><span class="txt-group" ref="refHome">Home</span></RouterLink>
+        <!-- <RouterLink class="navi-link" to="/"><span class="txt-group" ref="refHome">Home</span></RouterLink> -->
         <RouterLink class="navi-link" to="/about"><span class="txt-group" ref="refAbout">About</span></RouterLink>
+        <RouterLink class="navi-link" to="/profile"><span class="txt-group" ref="refProfile">Profile</span></RouterLink>
         <RouterLink class="navi-link" to="/portfolio"><span class="txt-group" ref="refWorks">Works</span></RouterLink>
 	</div>
 </template>
@@ -51,19 +54,18 @@ onMounted(()=>{
 		display:block;
 		position:absolute;
 		left:50%;
-		bottom:-1px;
+		bottom:4px;
 		height:1px;
 		width:0%;
-		background-color:white;
+		background-color:rgba(255,255,255,0.5);
 		opacity:0;
 		transition:all 0.6s;
 		animation: cast-in 0.6s linear 3.5s forwards;
 	}
 
-	[data-path='/'] .navi-link[href='/home']::after,
-	[data-path='/profiles'] .navi-link[href='/home/profiles']::after {
-		left:0%;
-		width:100%;
+	.navi-link.router-link-active::after {
+		left:0.15rem;
+		width:calc(100% - 0.3rem);
 	}
 }
 </style>
