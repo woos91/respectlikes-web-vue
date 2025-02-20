@@ -13,7 +13,7 @@ function setStrokeDashs() {
     if (!svg) return;
     paths = svg.querySelectorAll("path");
     paths.forEach((path, i) => {
-        path.style.transitionDelay = String(i*50) + "ms";
+        path.style.transitionDelay = String(i*50+500) + "ms";
     });
 }
 </script>
@@ -68,6 +68,6 @@ function setStrokeDashs() {
 ._active #about_img_flying path {
     opacity:1;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 1.5s linear;
+    transition: stroke-dashoffset 1.8s linear;
 }
 </style>

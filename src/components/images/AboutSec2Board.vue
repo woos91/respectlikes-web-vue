@@ -1,5 +1,21 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 
+const _this = ref<HTMLElement | null>(null)
+
+onMounted (()=>{
+    setStrokeDashs();
+});
+
+let svg, paths;
+function setStrokeDashs() {
+    svg = _this.value;
+    if (!svg) return;
+    paths = svg.querySelectorAll("path");
+    paths.forEach((path, i) => {
+        path.style.transitionDelay = String(i*50+500) + "ms";
+    });
+}
 </script>
 
 <template>
@@ -112,6 +128,6 @@
 ._active #about_img_board line {
     opacity:1;
     stroke-dashoffset: 0;
-    transition: stroke-dashoffset 1.5s linear;
+    transition: stroke-dashoffset 1.8s linear;
 }
 </style>

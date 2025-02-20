@@ -147,14 +147,14 @@ function setActiveContents(scTY:number) {
 		opacity:0;
 		transform : translateY(0.5rem);
 		transition-property: opacity, transform;
-		transition-duration: 400ms;
+		transition-duration: 600ms;
 		transition-timing-function: ease-in;
 	}
 	._active .line-wrap {
 		opacity:1;
 		transform : translateY(0);
 		transition-property: opacity, transform;
-		transition-duration: 700ms;
+		transition-duration: 1200ms;
 		transition-timing-function:cubic-bezier(.43,1.51,.58,1.09);
 	}
 }
