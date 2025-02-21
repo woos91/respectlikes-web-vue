@@ -16,7 +16,7 @@ const app = useAppData();
 const contentsWrap = ref();
 const isMb:boolean = isMobile();
 // const isMb:boolean = true;
-app.layout.deviceType = isMb? "mb":"dt";
+// app.layout.deviceType = isMb? "mb":"dt";
 
 let scroll:Scrollbar;
 router.beforeEach((to, from) => {

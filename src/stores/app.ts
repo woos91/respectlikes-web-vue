@@ -1,6 +1,7 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import type { RouteData } from '../router'
+import isMobile from '../respects/browser/isMobile';
 
 export const useAppData = defineStore('app', () => {
 	const 
@@ -9,7 +10,7 @@ export const useAppData = defineStore('app', () => {
 		naviMode:false,
 		appWidth:window.innerWidth,
 		appHeight:window.innerHeight,
-		deviceType:(window.innerWidth > 480? "dt":"mb") as "dt"|"mb",
+		deviceType:(isMobile()? "mb":"dt") as "dt"|"mb",
 		headerHeight:94,
 		footerHeight:100,
 	}),

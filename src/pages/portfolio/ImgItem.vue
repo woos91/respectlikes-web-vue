@@ -121,7 +121,7 @@ onUnmounted(()=>{
 	animation: cast-move-up 1.6s ease-out 0s forwards;
 }
 .direction-x > .img-item img {
-	height:100%;
+	/* height:100%; */
 }
 .direction-y > .img-item img {
 	width:100%;

@@ -26,8 +26,10 @@ import Sec1Img from "@/components/images/ProfileSec1Baby.vue"
 @import 'https://fonts.googleapis.com/css2?family=Grandiflora+One&family=League+Script&family=Stylish&display=swap';
 
 #profile-1 {
-    min-height : calc(100vh - 3rem);
-	margin-bottom:0;
+    height : 600px;
+	margin:calc((50vh - 300px) - 3rem) 0;
+	margin-left:-2rem;
+	padding:0;
 
 	.content-box {
 		position:absolute;

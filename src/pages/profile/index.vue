@@ -27,7 +27,7 @@ function setScroll(event:any){
 function setActiveContents(scTY:number) {
 	let 
 	winH = window.innerHeight,
-	cArea = 0.6, out = ((1-cArea)/2)*winH,
+	cArea = 0.5, out = ((1-cArea)/2)*winH,
 	min = out,
 	max = winH - min;
 	let wrap = document.querySelector(".con-profile");

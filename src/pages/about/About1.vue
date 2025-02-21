@@ -11,7 +11,7 @@ import Sec1Bg from "@/components/images/AboutSec1bg.vue"
             <h3 class="line-wrap"><LogoKr id="logoKr"/><span class="about-title-text">취향존중?</span></h3>
             <p>
                 <span class="line-wrap">"취향존중" (Respect for your likes)은 25년차 </span>
-                <span class="line-wrap">디자인·웹 베테랑 '<b>Creator Woos</b>'와 디자인, 개발 </span>
+                <span class="line-wrap">디자인·웹 베테랑 '<router-link to="/profile">Creator Woos</router-link>'와 디자인, 개발 </span>
                 <span class="line-wrap">퍼펙트 크루가 협업하는 솔루션 파트너입니다. </span>
                 <span class="line-wrap">창의성과 기술 경험이 결합된 맞춤형 솔루션으로 </span>
                 <span class="line-wrap">브랜드의 고유한 아이덴티티를 구현하며, 당신의 </span>
@@ -56,6 +56,10 @@ import Sec1Bg from "@/components/images/AboutSec1bg.vue"
         top: -1.1rem;
         left: -3rem;
         min-width: 800px;
+    }
+    a, a:active, a:visited {
+        font-weight : 600;
+        text-decoration: underline;
     }
 }
 @media screen and (min-width:800px){
