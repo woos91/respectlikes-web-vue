@@ -1,37 +1,31 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import api from '../../respects/api/index'
 import type {ConsType, DeviceType} from './models'
 import ImgItem from './ImgItem.vue';
 import { useAppData } from '../../stores/app';
 import FillSort from '../../respects/layout/FillSort';
-
 const app = useAppData();
 const device = computed(()=>app.layout.deviceType);
 const wideMode = computed(()=>app.layout.appWidth>1500?"wide":"");
 const consData = ref<ConsType[]>([]);
 const ul1 = ref(null);
 let listSort:FillSort;
-function loadData() {
-	if (ul1.value) listSort = new FillSort(ul1.value, "sort-item", [800, 1500, 1900], 40);
-	api.request(
-		"WORK_LIST",
-		{},
-		(data:any)=>{
-			consData.value = data.data;
-			listSort.start();
-		},
-		(err:string)=>{
-			console.warn(err);
-		}
-	)
+
+function setList(data:ConsType[]):void {
+	consData.value = [];
+	setTimeout(() => {
+		consData.value = data;
+		listSort.start();
+	}, 1000/30);
 }
 onMounted(()=>{
-	loadData();
+	if (ul1.value) listSort = new FillSort(ul1.value, "sort-item", [800, 1500, 1900], 40);
 });
 onUnmounted(()=>{
 	if (listSort) listSort.endRefresh();
 });
+
+defineExpose({ setList, });
 </script>
 
 <template>

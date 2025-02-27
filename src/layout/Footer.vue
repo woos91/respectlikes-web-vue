@@ -21,7 +21,7 @@ div#app div.app-wrap .main-wrap::after {
 	content: "Copyright 취향존중. All Rights Reserved.";
     display: block;
     position: relative;
-    right: 1.6rem;
+    /* right: 1.6rem; */
     bottom: 1rem;
     opacity: 0.7;
     text-align: center;

@@ -8,10 +8,90 @@
     },
     "data":[
         {
+            "id":"CC001",
+            "titleMain":"맛있는놀이 찹챱",
+            "titleSub":"CHAPCHAP web site - desktop",
+            "link":"",
+            "category":"web",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"chapchap main page",
+                    "fileName":"chapchap_web_design_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_design_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_design_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_design_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_design_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_design_6.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_1.jpg"
+                },
+                {
+                    "imgID":"8",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_2.jpg"
+                },
+                {
+                    "imgID":"9",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_3.jpg"
+                },
+                {
+                    "imgID":"10",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_4.jpg"
+                },
+                {
+                    "imgID":"11",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_5.jpg"
+                },
+                {
+                    "imgID":"12",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_6.jpg"
+                },
+                {
+                    "imgID":"13",
+                    "alt":"chapchap sub page",
+                    "fileName":"chapchap_web_7.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:3><y><i:4><i:5></y></x><x><i:2><y><i:6><i:11></y></x><x><i:8><i:9><i:10></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x>><x><i:4><i:5></x>><x><i:6><i:7></x>><x><i:8><i:9><i:10></x></y>"
+
+        },
+        {
             "id":"FL003",
             "titleMain":"휠라",
             "titleSub":"Fila korea - desktop & mobile web",
             "link":"https://www.fila.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -41,10 +121,193 @@
 
         },
         {
+            "id":"SS003",
+            "titleMain":"나는야새우 BI",
+            "titleSub":"IamShrimp - BI design",
+            "link":"http://www.iamshrimp.com/",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"나는야새우 로고",
+                    "fileName":"iamshrimp_logo.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"나는야새우 QR",
+                    "fileName":"iamshrimp_logo_qr.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"나는야새우 명함",
+                    "fileName":"iamshrimp_namecard.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><x><i:1><i:2></x><i:3></y>",
+            "layoutForMobile":"<y><x><i:1><i:2></x><i:3></y>"
+
+        },
+        {
+            "id":"JS001",
+            "titleMain":"재미스쿨 CI",
+            "titleSub":"Jaemi school : CI design",
+            "link":"",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"재미스쿨 로고",
+                    "fileName":"jaemischool_logo_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"재미스쿨 로고",
+                    "fileName":"jaemischool_logo_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"재미스쿨 로고",
+                    "fileName":"jaemischool_logo_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"재미스쿨 로고",
+                    "fileName":"jaemischool_logo_4.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><y><i:1><i:4></y><y><i:3><i:2></y></x>",
+            "layoutForMobile":"<y><i:1><i:2><i:3><i:4></y>"
+        },
+        {
+            "id":"SS002",
+            "titleMain":"나는야소금",
+            "titleSub":"BI & 패키지 디자인",
+            "link":"",
+            "category":"print",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"나는야소금 패키지 비닐팩 디자인",
+                    "fileName":"iamsalt_package_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"나는야소금 패키지 비닐팩 디자인",
+                    "fileName":"iamsalt_package_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"나는야소금 패키지 비닐팩 디자인",
+                    "fileName":"iamsalt_package_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"나는야소금 패키지 비닐팩 디자인",
+                    "fileName":"iamsalt_package_4.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><y><i:1><i:4></y><y><i:3><i:2></y></x>",
+            "layoutForMobile":"<y><i:1><i:2><i:3><i:4></y>"
+        },
+        {
+            "id":"SS003",
+            "titleMain":"나는야새우 PACKAGE",
+            "titleSub":"IamShrimp - package design",
+            "link":"http://www.iamshrimp.com/",
+            "category":"print",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_stiker_1.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp_package_stiker_2.jpg"
+                },
+                {
+                    "imgID":"8",
+                    "alt":"나는야새우 패키지 디자인",
+                    "fileName":"iamshrimp-package_6.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><x><i:1><y><i:6><i:7></y></x><i:4><x><i:5><i:2><y><i:3><i:8></y></x></y>",
+            "layoutForMobile":"<y><x><i:1><i:2></x><i:3></y>"
+
+        },
+        {
+            "id":"OK001",
+            "titleMain":"옥수서재",
+            "titleSub":"OKSU books & more - BI design",
+            "link":"",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"옥수서재 로고",
+                    "fileName":"oksu_books_more_logo_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"옥수서재 로고",
+                    "fileName":"oksu_books_more_logo_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"옥수서재 로고",
+                    "fileName":"oksu_books_more_logo_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"옥수서재 로고",
+                    "fileName":"oksu_books_more_logo_4.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><y><i:1><i:4></y><y><i:2><i:3></y></x>",
+            "layoutForMobile":"<y><i:1><i:2><i:3><i:4></y>"
+        },
+        {
             "id":"NP001",
             "titleMain":"네파",
             "titleSub":"Nepa : n plus - desktop & mobile web",
             "link":"https://www.nplus.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -71,13 +334,13 @@
             ],
             "layoutForDesktop":"<x> <i:1><y><i:2><i:3></y><i:4></x> ",
             "layoutForMobile":"<y> <i:1><x><y><i:2><i:3></y><i:4></x></y>"
-
         },
         {
             "id":"PX001",
             "titleMain":"PXG",
             "titleSub":"PXG korea - desktop & mobile web",
             "link":"https://www.pxg.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -115,6 +378,7 @@
             "titleMain":"라이카",
             "titleSub":"Leica korea - desktop & mobile web",
             "link":"https://www.leica-store.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -138,10 +402,97 @@
             "layoutForMobile":"<y><i:1><x><i:2><i:2></x></y>"
         },
         {
+            "id":"LD001",
+            "titleMain":"라데보 코스메틱",
+            "titleSub":"Ladevo - BI design",
+            "link":"",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"라데보 로고 시스템",
+                    "fileName":"Ladevo logo-01.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"라데보 세로 로고",
+                    "fileName":"ladevo_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"라데보 패키지 이미지",
+                    "fileName":"ladevo_package_1.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"라데보 패키지 이미지",
+                    "fileName":"ladevo_package_2.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"라데보 패키지 박스",
+                    "fileName":"ladevo_package_box.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"라데보 가로 로고",
+                    "fileName":"ladevo_logo_5.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><x><i:1><i:2></x><x><i:3><y><i:5><i:6></y><i:4></x></y>",
+            "layoutForMobile":"<y><i:6><i:1><x><i:2><i:3><i:4></x><i:5></y>"
+        },
+        {
+            "id":"CC002",
+            "titleMain":"맛있는놀이 챱챱 - BI",
+            "titleSub":"CHAPCHAP - BI / namecard",
+            "link":"",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"챱챱맘마 명함",
+                    "fileName":"chopchop_mamma_namecard_6.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><y><i:5><i:6></y><y><i:1><i:2><i:3><i:4></y></x>",
+            "layoutForMobile":"<y><i:5><i:6><x><i:1><i:2></x><x><i:4><i:3></x></y>"
+        },
+        {
             "id":"MK001",
             "titleMain":"무스너클",
             "titleSub":"Moose Knuckles korea - desktop & mobile web",
             "link":"https://www.nplus.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -166,10 +517,123 @@
 
         },
         {
+            "id":"HB001",
+            "titleMain":"하이바이들 웹사이트",
+            "titleSub":"Hi.Bible - desktop & mobile web",
+            "link":"https://www.hibible.co.kr/",
+            "category":"web",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"하이바이블 main - for desktop",
+                    "fileName":"hibible_1_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_6.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"하이바이블 sub  - for desktop",
+                    "fileName":"hibible_1_dt_7.jpg"
+                },
+                {
+                    "imgID":"8",
+                    "alt":"하이바이블 main  - for mobile",
+                    "fileName":"hibible_1_mb_1.jpg"
+                },
+                {
+                    "imgID":"9",
+                    "alt":"하이바이블 sub  - for mobile",
+                    "fileName":"hibible_1_mb_2.jpg"
+                },
+                {
+                    "imgID":"10",
+                    "alt":"하이바이블 sub  - for mobile",
+                    "fileName":"hibible_1_mb_3.jpg"
+                },
+                {
+                    "imgID":"11",
+                    "alt":"하이바이블 sub  - for mobile",
+                    "fileName":"hibible_1_mb_4.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:6><y><i:2><i:3></y></x><x><i:4><i:5><i:7></x><x><i:8><i:9><i:10><i:11></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:6><y><i:2><i:3></y></x><x><i:4><i:7></x><x><y><x><i:8><i:9></x><x><i:10><i:11></x></y></y>"
+
+        },
+        {
+            "id":"GA003",
+            "titleMain":"GAP",
+            "titleSub":"2012 - GAP born to rock concert",
+            "link":"",
+            "category":"web",
+            "note":"",
+            "production":"Styleship. inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"GAP born to rock concert main",
+                    "fileName":"gap_3_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_3_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_3_dt_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_3_dt_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_3_dt_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_3_dt_6.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><i:1><x><i:2><i:3></x><x><i:4><i:5><i:6></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x><i:4><x><i:5><i:6></x></y>"
+        },
+        {
             "id":"PT001",
             "titleMain":"포터 온라인 스토어",
             "titleSub":"Porter korea - desktop & mobile web",
             "link":"https://korea.shop-porter.com/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -197,6 +661,7 @@
             "titleMain":"판도라",
             "titleSub":"Pandora korea - desktop & mobile web",
             "link":"https://kr.pandora.net/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -220,10 +685,54 @@
             "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
         },
         {
+            "id":"HB003",
+            "titleMain":"하이바이블 2019 워크북",
+            "titleSub":"Hi.Bible - 2019 summercamp workbook",
+            "link":"",
+            "category":"print",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 표지",
+                    "fileName":"hibible_workbook_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 페이지",
+                    "fileName":"hibible_workbook_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 페이지",
+                    "fileName":"hibible_workbook_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 페이지",
+                    "fileName":"hibible_workbook_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 페이지",
+                    "fileName":"hibible_workbook_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"하이바이블 2019 섬머캠프 워크북 뒷표지",
+                    "fileName":"hibible_workbook_6.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><y><i:1><x><i:2><i:3></x></y><y><x><i:4><i:5></x><i:6></y></x>",
+            "layoutForMobile":"<y><x><i:1><i:2></x><y><x><i:3><i:4></x><y><x><i:5><i:6></x></y>"
+        },
+        {
             "id":"BN001",
             "titleMain":"부쉬넬",
             "titleSub":"Bushnell Golf korea - desktop & mobile web",
             "link":"https://www.bushnellgolfkorea.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -251,6 +760,7 @@
             "titleMain":"골든구스",
             "titleSub":"Golden Goose korea - desktop & mobile web",
             "link":"https://www.bushnellgolfkorea.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -278,6 +788,7 @@
             "titleMain":"휠라",
             "titleSub":"Fila korea - desktop & mobile web",
             "link":"https://www.fila.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
@@ -302,10 +813,131 @@
 
         },
         {
+            "id":"HB002",
+            "titleMain":"하이바이블 2018 워크북",
+            "titleSub":"Hi.Bible - 2018 summercamp workbook",
+            "link":"",
+            "category":"print",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 표지",
+                    "fileName":"hibible-2018summercamp-workbook-1.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 목차페이지",
+                    "fileName":"hibible-2018summercamp-workbook-3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 일정표 페이지",
+                    "fileName":"hibible-2018summercamp-workbook-4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 페이지",
+                    "fileName":"hibible-2018summercamp-workbook-5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 페이지",
+                    "fileName":"hibible-2018summercamp-workbook-6.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"하이바이블 2018 섬머캠프 워크북 페이지",
+                    "fileName":"hibible-2018summercamp-workbook-7.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><x><i:1><i:3></x><x><i:4><i:5><i:6><i:7></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x></y>"
+
+        },
+        {
+            "id":"GA002",
+            "titleMain":"GAP",
+            "titleSub":"2009 - GAP the khaki collection",
+            "link":"",
+            "category":"web",
+            "note":"",
+            "production":"Styleship. inc.",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"2009 - GAP the khaki collection main",
+                    "fileName":"gap_2_dt_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"2009 - GAP the khaki collection sub",
+                    "fileName":"gap_2_dt_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"2009 - GAP the khaki collection sub",
+                    "fileName":"gap_2_dt_3.jpg"
+                },
+                {
+                    "imgID":"4",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_2_dt_4.jpg"
+                },
+                {
+                    "imgID":"5",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_2_dt_5.jpg"
+                },
+                {
+                    "imgID":"6",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_2_dt_6.jpg"
+                },
+                {
+                    "imgID":"7",
+                    "alt":"GAP born to rock concert sub",
+                    "fileName":"gap_2_dt_7.jpg"
+                }
+            ],
+            "layoutForDesktop":"<y><x><i:1><y><i:2><i:3></y></x><x><i:4><i:5><i:6><i:7></x></y>",
+            "layoutForMobile":"<y><i:1><x><i:2><i:3></x><x><i:4><i:5></x><x><i:6><i:7></x></y>"
+        },
+        {
+            "id":"YW001",
+            "titleMain":"연우메디컬",
+            "titleSub":"2017 - YEONWOO MEDICAL BI design",
+            "link":"",
+            "category":"cibi",
+            "note":"",
+            "production":"취향존중",
+            "images":[
+                {
+                    "imgID":"1",
+                    "alt":"2017 - YEONWOO MEDICAL namecard",
+                    "fileName":"yeonwoomedical2017_1.jpg"
+                },
+                {
+                    "imgID":"2",
+                    "alt":"2017 - YEONWOO MEDICAL logo",
+                    "fileName":"yeonwoomedical2017_2.jpg"
+                },
+                {
+                    "imgID":"3",
+                    "alt":"2017 - YEONWOO MEDICAL logo",
+                    "fileName":"yeonwoomedical2017_3.jpg"
+                }
+            ],
+            "layoutForDesktop":"<x><i:1><y><i:2><i:3></y></x>",
+            "layoutForMobile":"<y><i:1><i:2><i:3></y>"
+        },
+        {
             "id":"SI001",
             "titleMain":"신세계 인터내셔날",
             "titleSub":"Shinsaegae International - desktop web",
             "link":"http://www.sikorea.co.kr/",
+            "category":"web",
             "note":"",
             "production":"Styleship. Inc.",
             "images":[
