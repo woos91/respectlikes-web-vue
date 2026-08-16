@@ -11,7 +11,7 @@ import Sec4Img from "@/components/images/ProfileSec4Barista.vue"
 				<span class="line-wrap">그냥 커피 덕후</span> 
             </h5>
             <p> 
-                <span class="line-wrap">가죽공예, 금속공예, 목공, 미싱질… </span>
+                <span class="line-wrap">사진, 가죽공예, 금속공예, 목공, 미싱질… </span>
 				<span class="line-wrap">손으로 하는 꼼지락거리는 건 다 좋아합니다. 하지만 </span>
 				<span class="line-wrap">항상 맘 한구석엔 인생 최애템인 커피! 예전부터 </span>
 				<span class="line-wrap">공부하고 연습하며 즐겨오던 커피쟁이였었죠. 결국 </span>
